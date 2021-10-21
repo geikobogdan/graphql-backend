@@ -1,0 +1,35 @@
+{
+  "name": "graphql-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn clean && babel-watch ./src/index.js",
+    "clean": "rm -rf ./node_modules/.cache/babel-loader"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-transform-runtime": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-plugin-import-graphql": "^2.8.1",
+    "babel-preset-latest-node": "^5.5.1",
+    "babel-watch": "^7.5.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "@graphql-tools/schema": "^8.3.0",
+    "apollo-datasource-rest": "^3.3.0",
+    "apollo-server-express": "^3.4.0",
+    "core-js": "^3.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "graphql": "^15.6.1",
+    "graphql-subscriptions": "^1.2.1",
+    "graphql-tag": "^2.12.5",
+    "jsonwebtoken": "^8.5.1",
+    "regenerator-runtime": "^0.13.9",
+    "subscriptions-transport-ws": "^0.9.19",
+    "uuid": "^8.3.2"
+  }
+}
